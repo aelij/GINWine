@@ -1,0 +1,646 @@
+2021-04-25 11:53:00.2021|INFO|GINWine.Program|------------------------------------------------------------
+Session 04/25/2021 11:53 AM
+runs: 1, grammar file name: YesNPYesV3WithADJ.txt, vocabulary file name: Vocabulary.json, Distribution: Normal
+2021-04-25 11:53:00.2789|INFO|GINWine.Program|POS contained in data: PN V0 V1 D N V2 P A V3
+2021-04-25 11:53:00.2789|INFO|GINWine.Program|Data samples:
+2021-04-25 11:53:00.2789|INFO|GINWine.Program|200 sentences of length 2
+2021-04-25 11:53:00.2789|INFO|GINWine.Program|200 sentences of length 3
+2021-04-25 11:53:00.2789|INFO|GINWine.Program|200 sentences of length 4
+2021-04-25 11:53:00.2789|INFO|GINWine.Program|200 sentences of length 5
+2021-04-25 11:53:00.2789|INFO|GINWine.Program|200 sentences of length 6
+2021-04-25 11:53:00.2789|INFO|GINWine.Program|200 sentences of length 7
+2021-04-25 11:53:00.2789|INFO|GINWine.Program|200 sentences of length 8
+2021-04-25 11:53:00.2789|INFO|GINWine.Program|Unique sentences types (POS sequences) from data samples:
+2021-04-25 11:53:00.2789|INFO|GINWine.Program|1 unique sentences types of length 2
+2021-04-25 11:53:00.2789|INFO|GINWine.Program|2 unique sentences types of length 3
+2021-04-25 11:53:00.2789|INFO|GINWine.Program|5 unique sentences types of length 4
+2021-04-25 11:53:00.2789|INFO|GINWine.Program|9 unique sentences types of length 5
+2021-04-25 11:53:00.2789|INFO|GINWine.Program|16 unique sentences types of length 6
+2021-04-25 11:53:00.2881|INFO|GINWine.Program|27 unique sentences types of length 7
+2021-04-25 11:53:00.2881|INFO|GINWine.Program|39 unique sentences types of length 8
+2021-04-25 11:53:00.2881|INFO|GINWine.Program|Run 1:
+2021-04-25 11:53:00.2881|INFO|GINWine.Program|				Hyper-parameters : NumberOfNonTerminals: 5 NoiseTolerance: 0.00
+
+2021-04-25 11:53:00.2881|INFO|GINWine.Program|learning from sentences up to word length  5
+2021-04-25 11:53:45.9908|INFO|GINWine.Program|learning from sentences up to word length  6
+2021-04-25 11:53:45.9947|INFO|GINWine.Program|learning from sentences up to word length  7
+2021-04-25 11:53:45.9947|INFO|GINWine.Program|learning from sentences up to word length  8
+2021-04-25 12:04:03.1795|INFO|GINWine.Program|Best Hypothesis:
+Stack Constant Rules:
+695. X4* -> N
+213. X2* -> PN
+1008. X5* -> X2 X3*
+753. X4* -> A X4*
+271. X2* -> D X4*
+845. START* -> X5*
+465. X3* -> V1 X2*
+558. X3* -> V3 X5*
+103. X1* -> P X2*
+509. X3* -> V2 X1*
+439. X3* -> V0
+263. X2* -> D N
+Stack Changing Rules:
+ 
+ with objective function value 0.990
+2021-04-25 12:04:03.1795|INFO|GINWine.Program|Precision: 1.0000 Recall: 1.0000 F1-Score: 1.0000
+2021-04-25 12:04:03.1795|INFO|GINWine.Program|f1_score sufficiently high for latest hypothesis.
+2021-04-25 12:04:03.1795|INFO|GINWine.Program|Best Hypothesis:
+Stack Constant Rules:
+695. X4* -> N
+213. X2* -> PN
+1008. X5* -> X2 X3*
+753. X4* -> A X4*
+271. X2* -> D X4*
+845. START* -> X5*
+465. X3* -> V1 X2*
+558. X3* -> V3 X5*
+103. X1* -> P X2*
+509. X3* -> V2 X1*
+439. X3* -> V0
+263. X2* -> D N
+Stack Changing Rules:
+ 
+ with objective function value 0.990
+2021-04-25 12:04:03.1795|INFO|GINWine.Program|Overall session RunTime 00:10:57.68
+2021-04-25 12:04:03.1795|INFO|GINWine.Program|------------------------------------------------------------
+Session 04/25/2021 12:04 PM
+runs: 1, grammar file name: YesNPYesV3WithADJAmbiguous.txt, vocabulary file name: Vocabulary.json, Distribution: Normal
+2021-04-25 12:04:03.2033|INFO|GINWine.Program|POS contained in data: PN V0 V1 D N V3 P A V2
+2021-04-25 12:04:03.2033|INFO|GINWine.Program|Data samples:
+2021-04-25 12:04:03.2033|INFO|GINWine.Program|200 sentences of length 2
+2021-04-25 12:04:03.2033|INFO|GINWine.Program|200 sentences of length 3
+2021-04-25 12:04:03.2033|INFO|GINWine.Program|200 sentences of length 4
+2021-04-25 12:04:03.2033|INFO|GINWine.Program|200 sentences of length 5
+2021-04-25 12:04:03.2033|INFO|GINWine.Program|200 sentences of length 6
+2021-04-25 12:04:03.2033|INFO|GINWine.Program|200 sentences of length 7
+2021-04-25 12:04:03.2033|INFO|GINWine.Program|200 sentences of length 8
+2021-04-25 12:04:03.2033|INFO|GINWine.Program|Unique sentences types (POS sequences) from data samples:
+2021-04-25 12:04:03.2033|INFO|GINWine.Program|1 unique sentences types of length 2
+2021-04-25 12:04:03.2033|INFO|GINWine.Program|2 unique sentences types of length 3
+2021-04-25 12:04:03.2033|INFO|GINWine.Program|7 unique sentences types of length 4
+2021-04-25 12:04:03.2142|INFO|GINWine.Program|15 unique sentences types of length 5
+2021-04-25 12:04:03.2142|INFO|GINWine.Program|33 unique sentences types of length 6
+2021-04-25 12:04:03.2142|INFO|GINWine.Program|58 unique sentences types of length 7
+2021-04-25 12:04:03.2142|INFO|GINWine.Program|92 unique sentences types of length 8
+2021-04-25 12:04:03.2142|INFO|GINWine.Program|Run 1:
+2021-04-25 12:04:03.2142|INFO|GINWine.Program|				Hyper-parameters : NumberOfNonTerminals: 5 NoiseTolerance: 0.00
+
+2021-04-25 12:04:03.2142|INFO|GINWine.Program|learning from sentences up to word length  5
+2021-04-25 12:04:52.5962|INFO|GINWine.Program|learning from sentences up to word length  6
+2021-04-25 12:07:07.4799|INFO|GINWine.Program|learning from sentences up to word length  7
+2021-04-25 12:13:54.0370|INFO|GINWine.Program|learning from sentences up to word length  8
+2021-04-25 12:18:01.7594|INFO|GINWine.Program|Best Hypothesis:
+Stack Constant Rules:
+1. START* -> X1*
+635. X4* -> PN
+193. X1* -> X4 X2*
+256. X2* -> V1 X4*
+527. X3* -> P X4*
+228. X2* -> V0
+313. X2* -> P X1*
+298. X2* -> V3 X1*
+835. X4* -> X5 N
+149. X1* -> X1 X3*
+345. X2* -> V2 X3*
+1049. X5* -> X5 A
+515. X3* -> P PN
+891. X5* -> D
+Stack Changing Rules:
+ 
+ with objective function value 0.917
+2021-04-25 12:18:01.8089|INFO|GINWine.Program|Precision: 1.0000 Recall: 1.0000 F1-Score: 1.0000
+2021-04-25 12:18:01.8089|INFO|GINWine.Program|f1_score sufficiently high for latest hypothesis.
+2021-04-25 12:18:01.8089|INFO|GINWine.Program|Best Hypothesis:
+Stack Constant Rules:
+1. START* -> X1*
+635. X4* -> PN
+193. X1* -> X4 X2*
+256. X2* -> V1 X4*
+527. X3* -> P X4*
+228. X2* -> V0
+313. X2* -> P X1*
+298. X2* -> V3 X1*
+835. X4* -> X5 N
+149. X1* -> X1 X3*
+345. X2* -> V2 X3*
+1049. X5* -> X5 A
+515. X3* -> P PN
+891. X5* -> D
+Stack Changing Rules:
+ 
+ with objective function value 0.917
+2021-04-25 12:18:01.8089|INFO|GINWine.Program|Overall session RunTime 00:13:58.59
+2021-04-25 12:18:01.8089|INFO|GINWine.Program|------------------------------------------------------------
+Session 04/25/2021 12:18 PM
+runs: 1, grammar file name: YesNPYesV3WithADJ - Copy.txt, vocabulary file name: VocabularySingleVerbalCategory.json, Distribution: Normal
+2021-04-25 12:18:01.8261|INFO|GINWine.Program|POS contained in data: PN V D N P A
+2021-04-25 12:18:01.8261|INFO|GINWine.Program|Data samples:
+2021-04-25 12:18:01.8261|INFO|GINWine.Program|200 sentences of length 2
+2021-04-25 12:18:01.8261|INFO|GINWine.Program|200 sentences of length 3
+2021-04-25 12:18:01.8261|INFO|GINWine.Program|200 sentences of length 4
+2021-04-25 12:18:01.8261|INFO|GINWine.Program|200 sentences of length 5
+2021-04-25 12:18:01.8261|INFO|GINWine.Program|200 sentences of length 6
+2021-04-25 12:18:01.8261|INFO|GINWine.Program|200 sentences of length 7
+2021-04-25 12:18:01.8261|INFO|GINWine.Program|200 sentences of length 8
+2021-04-25 12:18:01.8261|INFO|GINWine.Program|Unique sentences types (POS sequences) from data samples:
+2021-04-25 12:18:01.8261|INFO|GINWine.Program|1 unique sentences types of length 2
+2021-04-25 12:18:01.8261|INFO|GINWine.Program|2 unique sentences types of length 3
+2021-04-25 12:18:01.8261|INFO|GINWine.Program|5 unique sentences types of length 4
+2021-04-25 12:18:01.8261|INFO|GINWine.Program|9 unique sentences types of length 5
+2021-04-25 12:18:01.8261|INFO|GINWine.Program|14 unique sentences types of length 6
+2021-04-25 12:18:01.8365|INFO|GINWine.Program|26 unique sentences types of length 7
+2021-04-25 12:18:01.8365|INFO|GINWine.Program|40 unique sentences types of length 8
+2021-04-25 12:18:01.8365|INFO|GINWine.Program|Run 1:
+2021-04-25 12:18:01.8365|INFO|GINWine.Program|				Hyper-parameters : NumberOfNonTerminals: 5 NoiseTolerance: 0.00
+
+2021-04-25 12:18:01.8365|INFO|GINWine.Program|learning from sentences up to word length  5
+2021-04-25 12:18:12.2555|INFO|GINWine.Program|learning from sentences up to word length  6
+2021-04-25 12:21:37.8349|INFO|GINWine.Program|learning from sentences up to word length  7
+2021-04-25 12:24:28.5384|INFO|GINWine.Program|------------------------------------------------------------
+Session 04/25/2021 12:24 PM
+runs: 1, grammar file name: YesNPYesV3WithADJ.txt, vocabulary file name: Vocabulary.json, Distribution: Normal
+2021-04-25 12:24:28.5935|INFO|GINWine.Program|POS contained in data: PN V0 V1 D N V2 P V3 A
+2021-04-25 12:24:28.5935|INFO|GINWine.Program|Data samples:
+2021-04-25 12:24:28.5935|INFO|GINWine.Program|200 sentences of length 2
+2021-04-25 12:24:28.5935|INFO|GINWine.Program|200 sentences of length 3
+2021-04-25 12:24:28.5935|INFO|GINWine.Program|200 sentences of length 4
+2021-04-25 12:24:28.5935|INFO|GINWine.Program|200 sentences of length 5
+2021-04-25 12:24:28.5935|INFO|GINWine.Program|200 sentences of length 6
+2021-04-25 12:24:28.5935|INFO|GINWine.Program|200 sentences of length 7
+2021-04-25 12:24:28.5935|INFO|GINWine.Program|200 sentences of length 8
+2021-04-25 12:24:28.5935|INFO|GINWine.Program|Unique sentences types (POS sequences) from data samples:
+2021-04-25 12:24:28.5935|INFO|GINWine.Program|1 unique sentences types of length 2
+2021-04-25 12:24:28.5935|INFO|GINWine.Program|2 unique sentences types of length 3
+2021-04-25 12:24:28.5935|INFO|GINWine.Program|5 unique sentences types of length 4
+2021-04-25 12:24:28.5935|INFO|GINWine.Program|9 unique sentences types of length 5
+2021-04-25 12:24:28.5935|INFO|GINWine.Program|16 unique sentences types of length 6
+2021-04-25 12:24:28.6018|INFO|GINWine.Program|25 unique sentences types of length 7
+2021-04-25 12:24:28.6018|INFO|GINWine.Program|39 unique sentences types of length 8
+2021-04-25 12:24:28.6018|INFO|GINWine.Program|Run 1:
+2021-04-25 12:24:28.6018|INFO|GINWine.Program|				Hyper-parameters : NumberOfNonTerminals: 5 NoiseTolerance: 0.00
+
+2021-04-25 12:24:28.6018|INFO|GINWine.Program|learning from sentences up to word length  5
+2021-04-25 12:35:25.9876|INFO|GINWine.Program|------------------------------------------------------------
+Session 04/25/2021 12:35 PM
+runs: 1, grammar file name: YesNPYesV3WithADJ.txt, vocabulary file name: Vocabulary.json, Distribution: Normal
+2021-04-25 12:35:26.0338|INFO|GINWine.Program|POS contained in data: PN V0 V1 D N V2 P V3 A
+2021-04-25 12:35:26.0338|INFO|GINWine.Program|Data samples:
+2021-04-25 12:35:26.0338|INFO|GINWine.Program|200 sentences of length 2
+2021-04-25 12:35:26.0338|INFO|GINWine.Program|200 sentences of length 3
+2021-04-25 12:35:26.0338|INFO|GINWine.Program|200 sentences of length 4
+2021-04-25 12:35:26.0338|INFO|GINWine.Program|200 sentences of length 5
+2021-04-25 12:35:26.0338|INFO|GINWine.Program|200 sentences of length 6
+2021-04-25 12:35:26.0338|INFO|GINWine.Program|200 sentences of length 7
+2021-04-25 12:35:26.0338|INFO|GINWine.Program|200 sentences of length 8
+2021-04-25 12:35:26.0407|INFO|GINWine.Program|Unique sentences types (POS sequences) from data samples:
+2021-04-25 12:35:26.0407|INFO|GINWine.Program|1 unique sentences types of length 2
+2021-04-25 12:35:26.0407|INFO|GINWine.Program|2 unique sentences types of length 3
+2021-04-25 12:35:26.0407|INFO|GINWine.Program|5 unique sentences types of length 4
+2021-04-25 12:35:26.0407|INFO|GINWine.Program|8 unique sentences types of length 5
+2021-04-25 12:35:26.0407|INFO|GINWine.Program|14 unique sentences types of length 6
+2021-04-25 12:35:26.0407|INFO|GINWine.Program|24 unique sentences types of length 7
+2021-04-25 12:35:26.0407|INFO|GINWine.Program|38 unique sentences types of length 8
+2021-04-25 12:35:26.0407|INFO|GINWine.Program|Run 1:
+2021-04-25 12:35:26.0407|INFO|GINWine.Program|				Hyper-parameters : NumberOfNonTerminals: 5 NoiseTolerance: 0.00
+
+2021-04-25 12:35:26.0407|INFO|GINWine.Program|learning from sentences up to word length  5
+2021-04-25 12:36:18.0772|INFO|GINWine.Program|learning from sentences up to word length  6
+2021-04-25 12:37:49.5062|INFO|GINWine.Program|learning from sentences up to word length  7
+2021-04-25 12:39:53.2725|INFO|GINWine.Program|learning from sentences up to word length  8
+2021-04-25 12:43:46.3908|INFO|GINWine.Program|Best Hypothesis:
+Stack Constant Rules:
+845. START* -> X5*
+635. X4* -> PN
+1037. X5* -> X4 X2*
+256. X2* -> V1 X4*
+692. X4* -> D X3*
+484. X3* -> N
+332. X2* -> V3 X5*
+556. X3* -> A X3*
+228. X2* -> V0
+84. X1* -> V2 P
+361. X2* -> X1 X4*
+Stack Changing Rules:
+ 
+ with objective function value 0.928
+2021-04-25 12:43:46.3908|INFO|GINWine.Program|Precision: 1.0000 Recall: 1.0000 F1-Score: 1.0000
+2021-04-25 12:43:46.3908|INFO|GINWine.Program|f1_score sufficiently high for latest hypothesis.
+2021-04-25 12:43:46.3908|INFO|GINWine.Program|Best Hypothesis:
+Stack Constant Rules:
+845. START* -> X5*
+635. X4* -> PN
+1037. X5* -> X4 X2*
+256. X2* -> V1 X4*
+692. X4* -> D X3*
+484. X3* -> N
+332. X2* -> V3 X5*
+556. X3* -> A X3*
+228. X2* -> V0
+84. X1* -> V2 P
+361. X2* -> X1 X4*
+Stack Changing Rules:
+ 
+ with objective function value 0.928
+2021-04-25 12:43:46.3908|INFO|GINWine.Program|Overall session RunTime 00:08:20.35
+2021-04-25 12:43:46.3908|INFO|GINWine.Program|------------------------------------------------------------
+Session 04/25/2021 12:43 PM
+runs: 1, grammar file name: YesNPYesV3WithADJAmbiguous.txt, vocabulary file name: Vocabulary.json, Distribution: Normal
+2021-04-25 12:43:46.4105|INFO|GINWine.Program|POS contained in data: PN V0 V1 D N V2 P V3 A
+2021-04-25 12:43:46.4105|INFO|GINWine.Program|Data samples:
+2021-04-25 12:43:46.4105|INFO|GINWine.Program|200 sentences of length 2
+2021-04-25 12:43:46.4105|INFO|GINWine.Program|200 sentences of length 3
+2021-04-25 12:43:46.4105|INFO|GINWine.Program|200 sentences of length 4
+2021-04-25 12:43:46.4105|INFO|GINWine.Program|200 sentences of length 5
+2021-04-25 12:43:46.4105|INFO|GINWine.Program|200 sentences of length 6
+2021-04-25 12:43:46.4105|INFO|GINWine.Program|200 sentences of length 7
+2021-04-25 12:43:46.4105|INFO|GINWine.Program|200 sentences of length 8
+2021-04-25 12:43:46.4156|INFO|GINWine.Program|Unique sentences types (POS sequences) from data samples:
+2021-04-25 12:43:46.4156|INFO|GINWine.Program|1 unique sentences types of length 2
+2021-04-25 12:43:46.4156|INFO|GINWine.Program|2 unique sentences types of length 3
+2021-04-25 12:43:46.4156|INFO|GINWine.Program|7 unique sentences types of length 4
+2021-04-25 12:43:46.4156|INFO|GINWine.Program|15 unique sentences types of length 5
+2021-04-25 12:43:46.4156|INFO|GINWine.Program|33 unique sentences types of length 6
+2021-04-25 12:43:46.4156|INFO|GINWine.Program|62 unique sentences types of length 7
+2021-04-25 12:43:46.4156|INFO|GINWine.Program|96 unique sentences types of length 8
+2021-04-25 12:43:46.4156|INFO|GINWine.Program|Run 1:
+2021-04-25 12:43:46.4156|INFO|GINWine.Program|				Hyper-parameters : NumberOfNonTerminals: 5 NoiseTolerance: 0.00
+
+2021-04-25 12:43:46.4156|INFO|GINWine.Program|learning from sentences up to word length  5
+2021-04-25 12:44:20.4150|INFO|GINWine.Program|learning from sentences up to word length  6
+2021-04-25 12:45:23.8881|INFO|GINWine.Program|learning from sentences up to word length  7
+2021-04-25 12:48:19.2177|INFO|GINWine.Program|learning from sentences up to word length  8
+2021-04-25 12:52:12.7530|INFO|GINWine.Program|Best Hypothesis:
+Stack Constant Rules:
+1. START* -> X1*
+424. X3* -> PN
+948. X5* -> P X3*
+180. X1* -> X3 X4*
+677. X4* -> V1 X3*
+750. X4* -> V3 X1*
+603. X3* -> X3 X5*
+169. X1* -> X3 V0
+480. X3* -> D X2*
+724. X4* -> V2 X5*
+664. X4* -> V0 X5*
+344. X2* -> A X2*
+273. X2* -> N
+151. X1* -> X1 X5*
+829. X4* -> X4 X5*
+Stack Changing Rules:
+ 
+ with objective function value 0.936
+2021-04-25 12:52:12.7734|INFO|GINWine.Program|Precision: 1.0000 Recall: 1.0000 F1-Score: 1.0000
+2021-04-25 12:52:12.7734|INFO|GINWine.Program|f1_score sufficiently high for latest hypothesis.
+2021-04-25 12:52:12.7734|INFO|GINWine.Program|Best Hypothesis:
+Stack Constant Rules:
+1. START* -> X1*
+424. X3* -> PN
+948. X5* -> P X3*
+180. X1* -> X3 X4*
+677. X4* -> V1 X3*
+750. X4* -> V3 X1*
+603. X3* -> X3 X5*
+169. X1* -> X3 V0
+480. X3* -> D X2*
+724. X4* -> V2 X5*
+664. X4* -> V0 X5*
+344. X2* -> A X2*
+273. X2* -> N
+151. X1* -> X1 X5*
+829. X4* -> X4 X5*
+Stack Changing Rules:
+ 
+ with objective function value 0.936
+2021-04-25 12:52:12.7734|INFO|GINWine.Program|Overall session RunTime 00:08:26.35
+2021-04-25 12:52:12.7734|INFO|GINWine.Program|------------------------------------------------------------
+Session 04/25/2021 12:52 PM
+runs: 1, grammar file name: YesNPYesV3WithADJ - Copy.txt, vocabulary file name: VocabularySingleVerbalCategory.json, Distribution: Normal
+2021-04-25 12:52:12.7734|INFO|GINWine.Program|POS contained in data: PN V D N P A
+2021-04-25 12:52:12.7734|INFO|GINWine.Program|Data samples:
+2021-04-25 12:52:12.7734|INFO|GINWine.Program|200 sentences of length 2
+2021-04-25 12:52:12.7734|INFO|GINWine.Program|200 sentences of length 3
+2021-04-25 12:52:12.7734|INFO|GINWine.Program|200 sentences of length 4
+2021-04-25 12:52:12.7734|INFO|GINWine.Program|200 sentences of length 5
+2021-04-25 12:52:12.7734|INFO|GINWine.Program|200 sentences of length 6
+2021-04-25 12:52:12.7734|INFO|GINWine.Program|200 sentences of length 7
+2021-04-25 12:52:12.7734|INFO|GINWine.Program|200 sentences of length 8
+2021-04-25 12:52:12.7895|INFO|GINWine.Program|Unique sentences types (POS sequences) from data samples:
+2021-04-25 12:52:12.7895|INFO|GINWine.Program|1 unique sentences types of length 2
+2021-04-25 12:52:12.7895|INFO|GINWine.Program|2 unique sentences types of length 3
+2021-04-25 12:52:12.7895|INFO|GINWine.Program|5 unique sentences types of length 4
+2021-04-25 12:52:12.7895|INFO|GINWine.Program|9 unique sentences types of length 5
+2021-04-25 12:52:12.7895|INFO|GINWine.Program|14 unique sentences types of length 6
+2021-04-25 12:52:12.7895|INFO|GINWine.Program|25 unique sentences types of length 7
+2021-04-25 12:52:12.7895|INFO|GINWine.Program|39 unique sentences types of length 8
+2021-04-25 12:52:12.7895|INFO|GINWine.Program|Run 1:
+2021-04-25 12:52:12.7895|INFO|GINWine.Program|				Hyper-parameters : NumberOfNonTerminals: 5 NoiseTolerance: 0.00
+
+2021-04-25 12:52:12.7895|INFO|GINWine.Program|learning from sentences up to word length  5
+2021-04-25 12:52:33.0882|INFO|GINWine.Program|learning from sentences up to word length  6
+2021-04-25 12:54:47.8187|INFO|GINWine.Program|learning from sentences up to word length  7
+2021-04-25 12:57:55.1470|INFO|GINWine.Program|learning from sentences up to word length  8
+2021-04-25 13:02:22.3804|INFO|GINWine.Program|Best Hypothesis:
+Stack Constant Rules:
+2. X1* -> PN
+134. START* -> X2*
+216. X2* -> X1 X3*
+37. X1* -> D X5*
+287. X3* -> V X1*
+570. X5* -> N
+605. X5* -> A X5*
+288. X3* -> V X2*
+290. X3* -> V X4*
+456. X4* -> P X1*
+209. X2* -> X1 V
+30. X1* -> D N
+436. X4* -> D X5*
+Stack Changing Rules:
+ 
+ with objective function value 0.969
+2021-04-25 13:02:22.3949|INFO|GINWine.Program|Precision: 1.0000 Recall: 1.0000 F1-Score: 1.0000
+2021-04-25 13:02:22.3949|INFO|GINWine.Program|f1_score sufficiently high for latest hypothesis.
+2021-04-25 13:02:22.3949|INFO|GINWine.Program|Best Hypothesis:
+Stack Constant Rules:
+2. X1* -> PN
+134. START* -> X2*
+216. X2* -> X1 X3*
+37. X1* -> D X5*
+287. X3* -> V X1*
+570. X5* -> N
+605. X5* -> A X5*
+288. X3* -> V X2*
+290. X3* -> V X4*
+456. X4* -> P X1*
+209. X2* -> X1 V
+30. X1* -> D N
+436. X4* -> D X5*
+Stack Changing Rules:
+ 
+ with objective function value 0.969
+2021-04-25 13:02:22.3949|INFO|GINWine.Program|Overall session RunTime 00:10:09.60
+2021-04-25 13:02:22.3949|INFO|GINWine.Program|------------------------------------------------------------
+Session 04/25/2021 1:02 PM
+runs: 1, grammar file name: YesNPYesV3WithADJAmbiguous - Copy.txt, vocabulary file name: VocabularySingleVerbalCategory.json, Distribution: Normal
+2021-04-25 13:02:22.4106|INFO|GINWine.Program|POS contained in data: PN V D N P A
+2021-04-25 13:02:22.4106|INFO|GINWine.Program|Data samples:
+2021-04-25 13:02:22.4106|INFO|GINWine.Program|200 sentences of length 2
+2021-04-25 13:02:22.4106|INFO|GINWine.Program|200 sentences of length 3
+2021-04-25 13:02:22.4106|INFO|GINWine.Program|200 sentences of length 4
+2021-04-25 13:02:22.4106|INFO|GINWine.Program|200 sentences of length 5
+2021-04-25 13:02:22.4106|INFO|GINWine.Program|200 sentences of length 6
+2021-04-25 13:02:22.4142|INFO|GINWine.Program|200 sentences of length 7
+2021-04-25 13:02:22.4142|INFO|GINWine.Program|200 sentences of length 8
+2021-04-25 13:02:22.4142|INFO|GINWine.Program|Unique sentences types (POS sequences) from data samples:
+2021-04-25 13:02:22.4142|INFO|GINWine.Program|1 unique sentences types of length 2
+2021-04-25 13:02:22.4142|INFO|GINWine.Program|2 unique sentences types of length 3
+2021-04-25 13:02:22.4142|INFO|GINWine.Program|5 unique sentences types of length 4
+2021-04-25 13:02:22.4142|INFO|GINWine.Program|12 unique sentences types of length 5
+2021-04-25 13:02:22.4142|INFO|GINWine.Program|28 unique sentences types of length 6
+2021-04-25 13:02:22.4142|INFO|GINWine.Program|53 unique sentences types of length 7
+2021-04-25 13:02:22.4142|INFO|GINWine.Program|81 unique sentences types of length 8
+2021-04-25 13:02:22.4142|INFO|GINWine.Program|Run 1:
+2021-04-25 13:02:22.4142|INFO|GINWine.Program|				Hyper-parameters : NumberOfNonTerminals: 5 NoiseTolerance: 0.00
+
+2021-04-25 13:02:22.4142|INFO|GINWine.Program|learning from sentences up to word length  5
+2021-04-25 13:04:16.8334|INFO|GINWine.Program|learning from sentences up to word length  6
+2021-04-25 13:08:16.7840|INFO|GINWine.Program|learning from sentences up to word length  7
+2021-04-25 13:13:47.9140|INFO|GINWine.Program|learning from sentences up to word length  8
+2021-04-25 13:23:51.1676|INFO|GINWine.Program|Best Hypothesis:
+Stack Constant Rules:
+135. X2* -> PN
+400. START* -> X4*
+26. X1* -> D
+211. X2* -> X1 N
+554. X5* -> V X2*
+80. X1* -> X1 A
+496. X4* -> X2 X5*
+592. X5* -> P X4*
+546. X5* -> V
+518. X4* -> X4 X3*
+324. X3* -> P X2*
+144. X2* -> PN X3*
+556. X5* -> V X4*
+663. X5* -> X5 X3*
+555. X5* -> V X3*
+317. X3* -> P PN
+Stack Changing Rules:
+ 
+ with objective function value 0.942
+2021-04-25 13:23:51.2397|INFO|GINWine.Program|Precision: 1.0000 Recall: 1.0000 F1-Score: 1.0000
+2021-04-25 13:23:51.2397|INFO|GINWine.Program|f1_score sufficiently high for latest hypothesis.
+2021-04-25 13:23:51.2397|INFO|GINWine.Program|Best Hypothesis:
+Stack Constant Rules:
+135. X2* -> PN
+400. START* -> X4*
+26. X1* -> D
+211. X2* -> X1 N
+554. X5* -> V X2*
+80. X1* -> X1 A
+496. X4* -> X2 X5*
+592. X5* -> P X4*
+546. X5* -> V
+518. X4* -> X4 X3*
+324. X3* -> P X2*
+144. X2* -> PN X3*
+556. X5* -> V X4*
+663. X5* -> X5 X3*
+555. X5* -> V X3*
+317. X3* -> P PN
+Stack Changing Rules:
+ 
+ with objective function value 0.942
+2021-04-25 13:23:51.2428|INFO|GINWine.Program|Overall session RunTime 00:21:28.82
+2021-04-25 14:48:46.4856|INFO|GINWine.Program|------------------------------------------------------------
+Session 04/25/2021 2:48 PM
+runs: 1, grammar file name: MoveNP.txt, vocabulary file name: Vocabulary.json, Distribution: Normal
+2021-04-25 14:48:46.5396|INFO|GINWine.Program|POS contained in data: PN V0 V1 D N V2 P V3
+2021-04-25 14:48:46.5396|INFO|GINWine.Program|Data samples:
+2021-04-25 14:48:46.5396|INFO|GINWine.Program|200 sentences of length 2
+2021-04-25 14:48:46.5396|INFO|GINWine.Program|200 sentences of length 3
+2021-04-25 14:48:46.5396|INFO|GINWine.Program|200 sentences of length 4
+2021-04-25 14:48:46.5396|INFO|GINWine.Program|200 sentences of length 5
+2021-04-25 14:48:46.5396|INFO|GINWine.Program|200 sentences of length 6
+2021-04-25 14:48:46.5396|INFO|GINWine.Program|200 sentences of length 7
+2021-04-25 14:48:46.5396|INFO|GINWine.Program|200 sentences of length 8
+2021-04-25 14:48:46.5396|INFO|GINWine.Program|Unique sentences types (POS sequences) from data samples:
+2021-04-25 14:48:46.5396|INFO|GINWine.Program|1 unique sentences types of length 2
+2021-04-25 14:48:46.5396|INFO|GINWine.Program|3 unique sentences types of length 3
+2021-04-25 14:48:46.5396|INFO|GINWine.Program|6 unique sentences types of length 4
+2021-04-25 14:48:46.5396|INFO|GINWine.Program|11 unique sentences types of length 5
+2021-04-25 14:48:46.5396|INFO|GINWine.Program|16 unique sentences types of length 6
+2021-04-25 14:48:46.5396|INFO|GINWine.Program|24 unique sentences types of length 7
+2021-04-25 14:48:46.5396|INFO|GINWine.Program|31 unique sentences types of length 8
+2021-04-25 14:48:46.5396|INFO|GINWine.Program|Run 1:
+2021-04-25 14:48:46.5396|INFO|GINWine.Program|				Hyper-parameters : NumberOfNonTerminals: 5 NoiseTolerance: 0.00
+
+2021-04-25 14:48:46.5396|INFO|GINWine.Program|learning from sentences up to word length  5
+2021-04-25 14:55:19.4081|INFO|GINWine.Program|learning from sentences up to word length  6
+2021-04-25 15:03:12.6433|INFO|GINWine.Program|learning from sentences up to word length  7
+2021-04-25 15:12:52.1347|INFO|GINWine.Program|learning from sentences up to word length  8
+2021-04-25 15:26:06.8369|INFO|GINWine.Program|Best Hypothesis:
+Stack Constant Rules:
+1. START* -> X1*
+734. X5* -> PN
+781. X5* -> D N
+182. X1* -> X5 X4*
+658. X4* -> V3 X1*
+592. X4* -> V1 X5*
+704. X4* -> X3 X5*
+445. X3* -> V2 P
+565. X4* -> V0
+14. X1* -> PN X4*
+554. X4* -> PN V1
+Stack Changing Rules:
+1094. X1* -> X5 X1*X5
+1646. X4* -> X5 X4*X5 
+ with objective function value 0.972
+2021-04-25 15:26:06.8547|INFO|GINWine.Program|Precision: 1.0000 Recall: 1.0000 F1-Score: 1.0000
+2021-04-25 15:26:06.8547|INFO|GINWine.Program|f1_score sufficiently high for latest hypothesis.
+2021-04-25 15:26:06.8547|INFO|GINWine.Program|Best Hypothesis:
+Stack Constant Rules:
+1. START* -> X1*
+734. X5* -> PN
+781. X5* -> D N
+182. X1* -> X5 X4*
+658. X4* -> V3 X1*
+592. X4* -> V1 X5*
+704. X4* -> X3 X5*
+445. X3* -> V2 P
+565. X4* -> V0
+14. X1* -> PN X4*
+554. X4* -> PN V1
+Stack Changing Rules:
+1094. X1* -> X5 X1*X5
+1646. X4* -> X5 X4*X5 
+ with objective function value 0.972
+2021-04-25 15:26:06.8547|INFO|GINWine.Program|Overall session RunTime 00:37:20.30
+2021-04-25 15:26:06.8547|INFO|GINWine.Program|------------------------------------------------------------
+Session 04/25/2021 3:26 PM
+runs: 1, grammar file name: MoveNPPP.txt, vocabulary file name: Vocabulary.json, Distribution: Normal
+2021-04-25 15:26:06.8671|INFO|GINWine.Program|POS contained in data: PN V0 D N V1 V3 V2 P
+2021-04-25 15:26:06.8671|INFO|GINWine.Program|Data samples:
+2021-04-25 15:26:06.8671|INFO|GINWine.Program|200 sentences of length 2
+2021-04-25 15:26:06.8671|INFO|GINWine.Program|200 sentences of length 3
+2021-04-25 15:26:06.8671|INFO|GINWine.Program|200 sentences of length 4
+2021-04-25 15:26:06.8671|INFO|GINWine.Program|200 sentences of length 5
+2021-04-25 15:26:06.8671|INFO|GINWine.Program|200 sentences of length 6
+2021-04-25 15:26:06.8671|INFO|GINWine.Program|200 sentences of length 7
+2021-04-25 15:26:06.8671|INFO|GINWine.Program|200 sentences of length 8
+2021-04-25 15:26:06.8671|INFO|GINWine.Program|Unique sentences types (POS sequences) from data samples:
+2021-04-25 15:26:06.8671|INFO|GINWine.Program|1 unique sentences types of length 2
+2021-04-25 15:26:06.8671|INFO|GINWine.Program|3 unique sentences types of length 3
+2021-04-25 15:26:06.8671|INFO|GINWine.Program|8 unique sentences types of length 4
+2021-04-25 15:26:06.8671|INFO|GINWine.Program|13 unique sentences types of length 5
+2021-04-25 15:26:06.8671|INFO|GINWine.Program|16 unique sentences types of length 6
+2021-04-25 15:26:06.8671|INFO|GINWine.Program|29 unique sentences types of length 7
+2021-04-25 15:26:06.8671|INFO|GINWine.Program|40 unique sentences types of length 8
+2021-04-25 15:26:06.8671|INFO|GINWine.Program|Run 1:
+2021-04-25 15:26:06.8671|INFO|GINWine.Program|				Hyper-parameters : NumberOfNonTerminals: 5 NoiseTolerance: 0.00
+
+2021-04-25 15:26:06.8671|INFO|GINWine.Program|learning from sentences up to word length  5
+2021-04-25 15:27:07.1726|INFO|GINWine.Program|learning from sentences up to word length  6
+2021-04-25 15:34:30.5615|INFO|GINWine.Program|learning from sentences up to word length  7
+2021-04-25 15:48:56.3072|INFO|GINWine.Program|learning from sentences up to word length  8
+2021-04-25 16:04:23.8731|INFO|GINWine.Program|Best Hypothesis:
+Stack Constant Rules:
+1. START* -> X1*
+766. X5* -> D N
+734. X5* -> PN
+182. X1* -> X5 X4*
+630. X4* -> V3 X1*
+620. X4* -> V1 X5*
+646. X4* -> V2 X3*
+479. X3* -> P X5*
+172. X1* -> X5 V0
+467. X3* -> P PN
+556. X4* -> PN V1
+Stack Changing Rules:
+1066. X1* -> X3 X1*X3
+1094. X1* -> X5 X1*X5 
+ with objective function value 0.962
+2021-04-25 16:04:23.8731|INFO|GINWine.Program|Precision: 1.0000 Recall: 1.0000 F1-Score: 1.0000
+2021-04-25 16:04:23.8731|INFO|GINWine.Program|f1_score sufficiently high for latest hypothesis.
+2021-04-25 16:04:23.8731|INFO|GINWine.Program|Best Hypothesis:
+Stack Constant Rules:
+1. START* -> X1*
+766. X5* -> D N
+734. X5* -> PN
+182. X1* -> X5 X4*
+630. X4* -> V3 X1*
+620. X4* -> V1 X5*
+646. X4* -> V2 X3*
+479. X3* -> P X5*
+172. X1* -> X5 V0
+467. X3* -> P PN
+556. X4* -> PN V1
+Stack Changing Rules:
+1066. X1* -> X3 X1*X3
+1094. X1* -> X5 X1*X5 
+ with objective function value 0.962
+2021-04-25 16:04:23.8731|INFO|GINWine.Program|Overall session RunTime 00:38:17.00
+2021-04-25 16:04:23.8731|INFO|GINWine.Program|------------------------------------------------------------
+Session 04/25/2021 4:04 PM
+runs: 1, grammar file name: MoveNPWithADJ.txt, vocabulary file name: Vocabulary.json, Distribution: Normal
+2021-04-25 16:04:23.8902|INFO|GINWine.Program|POS contained in data: PN V0 V1 D N A V3 V2 P
+2021-04-25 16:04:23.8902|INFO|GINWine.Program|Data samples:
+2021-04-25 16:04:23.8902|INFO|GINWine.Program|200 sentences of length 2
+2021-04-25 16:04:23.8902|INFO|GINWine.Program|200 sentences of length 3
+2021-04-25 16:04:23.8902|INFO|GINWine.Program|200 sentences of length 4
+2021-04-25 16:04:23.8902|INFO|GINWine.Program|200 sentences of length 5
+2021-04-25 16:04:23.8902|INFO|GINWine.Program|200 sentences of length 6
+2021-04-25 16:04:23.8902|INFO|GINWine.Program|200 sentences of length 7
+2021-04-25 16:04:23.8902|INFO|GINWine.Program|200 sentences of length 8
+2021-04-25 16:04:23.8902|INFO|GINWine.Program|Unique sentences types (POS sequences) from data samples:
+2021-04-25 16:04:23.8902|INFO|GINWine.Program|1 unique sentences types of length 2
+2021-04-25 16:04:23.8902|INFO|GINWine.Program|3 unique sentences types of length 3
+2021-04-25 16:04:23.8902|INFO|GINWine.Program|8 unique sentences types of length 4
+2021-04-25 16:04:23.8902|INFO|GINWine.Program|14 unique sentences types of length 5
+2021-04-25 16:04:23.8902|INFO|GINWine.Program|29 unique sentences types of length 6
+2021-04-25 16:04:23.9010|INFO|GINWine.Program|46 unique sentences types of length 7
+2021-04-25 16:04:23.9010|INFO|GINWine.Program|77 unique sentences types of length 8
+2021-04-25 16:04:23.9010|INFO|GINWine.Program|Run 1:
+2021-04-25 16:04:23.9010|INFO|GINWine.Program|				Hyper-parameters : NumberOfNonTerminals: 5 NoiseTolerance: 0.00
+
+2021-04-25 16:04:23.9010|INFO|GINWine.Program|learning from sentences up to word length  5
+2021-04-25 16:10:27.7792|INFO|GINWine.Program|learning from sentences up to word length  6
+2021-04-25 16:18:32.1474|INFO|GINWine.Program|learning from sentences up to word length  7
+2021-04-25 16:31:17.0677|INFO|GINWine.Program|learning from sentences up to word length  8
+2021-04-25 16:47:08.5706|INFO|GINWine.Program|Best Hypothesis:
+Stack Constant Rules:
+1. START* -> X1*
+846. X5* -> PN
+209. X1* -> X5 X3*
+904. X5* -> D X4*
+468. X3* -> V1 X5*
+588. X3* -> X2 X5*
+327. X2* -> V2 P
+723. X4* -> A X4*
+524. X3* -> V3 X1*
+896. X5* -> D N
+695. X4* -> N
+199. X1* -> X5 V0
+Stack Changing Rules:
+1686. X3* -> X5 X3*X5
+1262. X1* -> X5 X1*X5 
+ with objective function value 0.934
+2021-04-25 16:47:08.5923|INFO|GINWine.Program|Precision: 1.0000 Recall: 1.0000 F1-Score: 1.0000
+2021-04-25 16:47:08.5923|INFO|GINWine.Program|f1_score sufficiently high for latest hypothesis.
+2021-04-25 16:47:08.5923|INFO|GINWine.Program|Best Hypothesis:
+Stack Constant Rules:
+1. START* -> X1*
+846. X5* -> PN
+209. X1* -> X5 X3*
+904. X5* -> D X4*
+468. X3* -> V1 X5*
+588. X3* -> X2 X5*
+327. X2* -> V2 P
+723. X4* -> A X4*
+524. X3* -> V3 X1*
+896. X5* -> D N
+695. X4* -> N
+199. X1* -> X5 V0
+Stack Changing Rules:
+1686. X3* -> X5 X3*X5
+1262. X1* -> X5 X1*X5 
+ with objective function value 0.934
+2021-04-25 16:47:08.5923|INFO|GINWine.Program|Overall session RunTime 00:42:44.69

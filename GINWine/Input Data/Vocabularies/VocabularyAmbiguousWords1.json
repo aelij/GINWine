@@ -1,0 +1,54 @@
+{
+  "POSwithPossibleWords": {
+    "D": [
+      "the",
+      "a"
+    ],
+    "N": [
+      "man",
+      "woman",
+      "girl",
+      "child",
+      "bells"
+    ],
+    "C": [
+      "that"
+    ],
+    "V0": [
+      "fell",
+      "cried",
+      "ran"
+    ],
+    "V1": [
+      "loved",
+      "kissed",
+      "hated"
+    ],
+    "V2": [
+      "went",
+      "arrived",
+      "toll"
+    ],
+    "V3": [
+      "knows",
+      "says"
+    ],
+    "PN": [
+      "John",
+      "Mary",
+      "David",
+      "Who"
+    ],
+    "P": [
+      "to",
+      "from",
+      "for"
+    ],
+    "A": [
+      "loved",
+      "pretty",
+      "big",
+      "cheap"
+    ]
+  }
+}

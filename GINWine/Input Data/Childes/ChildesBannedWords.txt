@@ -1,0 +1,4 @@
+  HashSet<string> bannedWords =
+                new HashSet<string>(new[] { "but", "okay", "ok", "yes", "no", "alright", "oh", "please", "right", "well", "whoops" });
+            //also ban WH-words for now. see if you succeed learning "simple" CFG.
+            bannedWords = bannedWords.Concat(new[] { "who", "what", "why", "where", "how", "whom", "whose", "when", "which" }).ToHashSet();

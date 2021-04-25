@@ -1,0 +1,21 @@
+﻿# Grammar Rules for --- Context Free Language 
+#
+# 1. The context free rules must be in the Format: A -> B C or A -> B
+# 2. Parts of Speech must never appear on Left Hand Side of rules
+# 3. The start symbol is "START"
+# 4. Comment lines begin with "#"
+# 5. The terminals corresponding to parts of speech appear in a separate vocabulary.json file
+#    please see run configuration
+#
+START -> IP
+IP -> NP VP
+NP -> PRON
+NP -> NBAR
+NP -> D NBAR
+NBAR -> N
+NBAR -> ADJ NBAR
+VP -> V PP
+VP -> V NP
+VP -> V IP
+VP -> V
+PP -> P NP

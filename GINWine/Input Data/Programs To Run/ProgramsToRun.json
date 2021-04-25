@@ -1,0 +1,28 @@
+﻿{
+  "ProgramsToRun": [
+    {
+      "InputParams": {
+        "IsCFG": true,
+        "VocabularyFileName": "UniversalVocabulary.json",
+        "GrammarFileName": null,
+        "DataFileName": "childes.csv",
+        "DistributionType": "Normal",
+        "MaxSentenceLength": 8 //MaxSentenceLength is at least 6
+      },
+      "SearchSpaceParams": {
+        "NumberOfRuns": 1,
+        "MinNumberOfNonTerminals": 8,
+        "MaxNumberOfNonTerminals": 8,
+        "MinNoise": 0.0,
+        "MaxNoise": 0.3,
+        "NoiseStepSize": 0.1
+      },
+      "SimulatedAnnealingParams": {
+        "CoolingFactor": 0.999,
+        "NumberOfRestarts": 6,
+        "NumberOfNonImprovingIterationsBeforeRestart": 30,
+        "InitialTemperature": 10
+      }
+    }
+  ]
+}

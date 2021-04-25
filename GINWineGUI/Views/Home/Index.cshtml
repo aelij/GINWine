@@ -1,0 +1,151 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<script src="https://d3js.org/d3.v6.min.js"></script>
+<style>
+    .node {
+        fill: steelblue;
+        stroke: none;
+    }
+
+    .link {
+        fill: none;
+        stroke: #ccc;
+        stroke-width: 1px;
+    }
+</style>
+
+
+<body>
+    <input type="button" id="JainDataset" value="GenerateAllSentences" onclick="javascript:LoadDataset();" ; />
+    <input type="file" name="inputfile"
+           id="inputfile">
+    <script type="text/javascript">
+        document.getElementById('inputfile')
+            .addEventListener('change', function () {
+
+                var fr = new FileReader();
+                fr.onload = function () {
+                    var htmlSelect = document.getElementById('selectYear');
+
+                    var splitLines = fr.result.split(/\r?\n/);
+                    
+                    for (i = 0; i < splitLines.length; i++) {
+                        htmlSelect.options[htmlSelect.options.length] = new Option(splitLines[i], splitLines[i]); 
+                    }  
+
+                }
+
+                fr.readAsText(this.files[0]);
+            })
+    </script>
+
+    <div id="my_example_wrapper">
+        <form id="listBox" name="listBox" method="post" action="">
+            <div id="my_example">
+                <table border="0" align="left">
+                    <tr><td align="right">Year</td><td align="left"><select name="selectYear" id="selectYear" onclick="javaScript:ParseSentence();"></select></td></tr>
+                </table>
+            </div>
+        </form>
+    </div>
+    <div id="#svgcontainer">
+        <svg id="#mySvg" width="2500" height="2500">
+            <g>
+                <g class="links"></g>
+                <g class="nodes"></g>
+            </g>
+        </svg>
+    </div>
+</body>
+
+<script type="text/javascript">
+    function ParseSentence() {
+
+        d3.select('svg g.nodes').selectAll('*').remove();
+        d3.select('svg g.links').selectAll('*').remove();
+
+        var htmlSelect = document.getElementById('selectYear');
+
+        var sentence = htmlSelect.options[htmlSelect.selectedIndex].text;
+        var postMessage = "/api/Parser/ParseSentence/" + sentence;
+
+        var request = new XMLHttpRequest();
+        request.open("post", postMessage, false);
+        request.setRequestHeader('Content-type', 'application/json; charset=utf-8');
+        request.send();
+        var data1 = request.responseText; //this is a json string.
+        var data = JSON.parse(data1);
+
+        var treeLayout = d3.cluster()
+            .size([800, 400]);
+
+        var root = d3.hierarchy(data);
+
+        treeLayout(root);
+
+        var nodes = d3.select('svg g.nodes')
+            .selectAll('circle.node')
+            .data(root.descendants())
+            .enter()
+            .append('text')
+            .attr('x', function (d) { return d.x; })
+            .attr('y', function (d) { return d.y; })
+            .text(function (d) {
+                return d.data.name;
+            });
+
+        // Links
+        d3.select('svg g.links')
+            .selectAll('line.link')
+            .data(root.links())
+            .enter()
+            .append('line')
+            .classed('link', true)
+            .attr('x1', function (d) { return d.source.x; })
+            .attr('y1', function (d) { return d.source.y; })
+            .attr('x2', function (d) { return d.target.x; })
+            .attr('y2', function (d) { return d.target.y; });
+
+
+    }
+</script>
+
+<script type="text/javascript">
+    function LoadDataset() {
+
+
+
+        var htmlSelect = document.getElementById('selectYear');
+        var i = 0;
+
+        //while (!iStream.AtEndOfStream) {
+        //    i = i + 1;
+        //    var line = iStream.ReadLine();
+        //    //var selectBoxOption = document.createElement("option" + i);
+        //    //selectBoxOption.value = line;
+        //    //selectBoxOption.text = line;
+
+        //    //htmlSelect.add(selectBoxOption, null);
+        //}
+
+
+                    var selectBoxOption = document.createElement("option");
+            selectBoxOption.value = "kuku";
+        selectBoxOption.text = "kuku";
+
+            htmlSelect.add(selectBoxOption, null);
+    }
+</script>
+
+<script type="text/javascript">
+
+    function LoadDataset2() {
+
+
+
+    }
+
+    
+</script>

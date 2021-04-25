@@ -1,0 +1,31 @@
+﻿{
+  "ProgramsToRun": [
+    {
+      "IsCFG": true,
+      "VocabularyFileName": "Vocabulary.json",
+      "NumberOfRuns": 1,
+      "GrammarFileName": "YesNPYesV3WithADJAmbiguous.txt",
+      "DataFileName": null,
+      "DistributionType": "Normal",
+      "CoolingFactor": 0.999
+    },
+    {
+      "IsCFG": true,
+      "VocabularyFileName": "Vocabulary.json",
+      "NumberOfRuns": 1,
+      "GrammarFileName": "YesNPYesV3WithADJAmbiguous.txt",
+      "DataFileName": null,
+      "DistributionType": "Uniform",
+      "CoolingFactor": 0.999
+    },
+    {
+      "IsCFG": true,
+      "VocabularyFileName": "Vocabulary.json",
+      "NumberOfRuns": 1,
+      "GrammarFileName": "YesNPYesV3WithADJAmbiguous.txt",
+      "DataFileName": null,
+      "DistributionType": "PowerLaw",
+      "CoolingFactor": 0.999
+    }
+  ]
+}

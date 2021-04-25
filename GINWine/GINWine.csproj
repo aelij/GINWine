@@ -1,0 +1,188 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <ServerGarbageCollection>true</ServerGarbageCollection>
+  </PropertyGroup>
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ContentWithTargetPath Include="Input Data\Programs To Run\NightRun.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>NightRun.json</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="Input Data\Programs To Run\NightRunFullAllCFGDists.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>NightRunFullAllCFGDists.json</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="Input Data\Programs To Run\NightRunFullAllCFGDistsSingleVerbalCategory.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>NightRunFullAllCFGDistsSingleVerbalCategory.json</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="Input Data\Programs To Run\NightRunFullHardCFGDists.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>NightRunFullHardCFGDists.json</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="Input Data\Programs To Run\NightRunFullUniform.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>NightRunFullUniform.json</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="Input Data\Programs To Run\NightRunFullNormal.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>NightRunFullNormal.json</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="Input Data\Programs To Run\NightRunFullPowerLaw.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>NightRunFullPowerLaw.json</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="Input Data\Programs To Run\NightRunonly CFG.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>NightRunonly CFG.json</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="Input Data\Programs To Run\ProgramsToRun.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>ProgramsToRun.json</TargetPath>
+    </ContentWithTargetPath>
+
+
+    <ContentWithTargetPath Include="Input Data\Context Free Grammars\NoNPNoV3.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>NoNPNoV3.txt</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="Input Data\Context Free Grammars\NoNPWithV3.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>NoNPWithV3.txt</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="Input Data\Context Free Grammars\PalindromeCFGNoTD.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>PalindromeCFGNoTD.txt</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="Input Data\Context Free Grammars\PalindromeCFGWithTD.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>PalindromeCFGWithTD.txt</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="Input Data\Context Free Grammars\YesNPNoV3.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>YesNPNoV3.txt</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="Input Data\Context Free Grammars\YesNPNoV3WithADJ.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>YesNPNoV3WithADJ.txt</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="Input Data\Context Free Grammars\YesNPYesV3.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>YesNPYesV3.txt</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="Input Data\Context Free Grammars\YesNPYesV3WithADJ.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>YesNPYesV3WithADJ.txt</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="Input Data\Context Free Grammars\YesNPYesV3WithADJAmbiguous.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>YesNPYesV3WithADJAmbiguous.txt</TargetPath>
+    </ContentWithTargetPath>
+
+    <ContentWithTargetPath Include="Input Data\Context Free Grammars\NoNPNoV3 - Copy.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>NoNPNoV3 - Copy.txt</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="Input Data\Context Free Grammars\NoNPWithV3 - Copy.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>NoNPWithV3 - Copy.txt</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="Input Data\Context Free Grammars\YesNPNoV3 - Copy.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>YesNPNoV3 - Copy.txt</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="Input Data\Context Free Grammars\YesNPNoV3WithADJ - Copy.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>YesNPNoV3WithADJ - Copy.txt</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="Input Data\Context Free Grammars\YesNPYesV3 - Copy.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>YesNPYesV3 - Copy.txt</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="Input Data\Context Free Grammars\YesNPYesV3WithADJ - Copy.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>YesNPYesV3WithADJ - Copy.txt</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="Input Data\Context Free Grammars\YesNPYesV3WithADJAmbiguous - Copy.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>YesNPYesV3WithADJAmbiguous - Copy.txt</TargetPath>
+    </ContentWithTargetPath>
+
+
+
+    <ContentWithTargetPath Include="Input Data\Context Free Grammars\CorwinIdealGrammar.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>CorwinIdealGrammar.txt</TargetPath>
+    </ContentWithTargetPath>
+
+    <ContentWithTargetPath Include="Input Data\Context Sensitive Grammars\MoveNP.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>MoveNP.txt</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="Input Data\Context Sensitive Grammars\MoveNPPP.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>MoveNPPP.txt</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="Input Data\Context Sensitive Grammars\MoveNPWithADJ.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>MoveNPWithADJ.txt</TargetPath>
+    </ContentWithTargetPath>
+
+    <ContentWithTargetPath Include="Input Data\Vocabularies\UniversalVocabulary.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>UniversalVocabulary.json</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="Input Data\Vocabularies\Vocabulary.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>Vocabulary.json</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="Input Data\Vocabularies\VocabularySingleVerbalCategory.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>VocabularySingleVerbalCategory.json</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="Input Data\Vocabularies\VocabularyAmbiguousWords1.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>VocabularyAmbiguousWords1.json</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="Input Data\Vocabularies\VocabularyAmbiguousWords2.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>VocabularyAmbiguousWords2.json</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="Input Data\Vocabularies\VocabularyAmbiguousWords3.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>VocabularyAmbiguousWords3.json</TargetPath>
+    </ContentWithTargetPath>
+    <ContentWithTargetPath Include="Input Data\Vocabularies\VocabularyVConsolidated.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>VocabularyVConsolidated.json</TargetPath>
+    </ContentWithTargetPath>
+
+    <ContentWithTargetPath Include="Input Data\Books\CorwinBooks.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>CorwinBooks.txt</TargetPath>
+    </ContentWithTargetPath>
+
+    <ContentWithTargetPath Include="Input Data\Books\David Copperfield.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>David Copperfield.txt</TargetPath>
+    </ContentWithTargetPath>
+
+    <ContentWithTargetPath Include="Input Data\Childes\TaggedInputBrownCorpusWithSpacy.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <TargetPath>TaggedInputBrownCorpusWithSpacy.txt</TargetPath>
+    </ContentWithTargetPath>
+
+  </ItemGroup>
+  
+  <ItemGroup>
+    <ProjectReference Include="..\GINWineLearner\GINWineLearner.csproj" />
+    <ProjectReference Include="..\GINWineParser\GINWineParser.csproj" />
+  </ItemGroup>
+
+</Project>

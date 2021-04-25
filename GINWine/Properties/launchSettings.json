@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "GINWine": {
+      "commandName": "Project",
+      "commandLineArgs": "FileName: \"NightRunFullAllCFGDists.json\""
+    }
+  }
+}

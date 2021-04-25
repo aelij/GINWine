@@ -1,0 +1,42 @@
+﻿# Grammar Rules for --- Context Free Language 
+#
+# 1. The context free rules must be in the Format: A -> B C or A -> B
+# 2. Parts of Speech must never appear on Left Hand Side of rules
+# 3. The start symbol is "START"
+# 4. Epsilon rule has the format (nothing follows the arrow): A ->
+# 5. Comment lines begin with "#"
+# 6. The terminals corresponding to parts of speech appear in a separate vocabulary.json file
+#    please see run configuration
+#  9 nonterminals, 29 production rules
+START -> X1
+X1 -> X2 X3
+# VP domain (X3 - VP, X9 - for ditransitives, not adopting Larsonian view at the moment cause it involves unsupported internal v-raising)
+X3 -> VERB
+X3 -> VERB X2
+X3 -> VERB X4
+X3 -> VERB X1
+X4 -> ADP X2
+X3 -> VERB X9
+X9 -> X2 X4
+X9 -> X2 X2
+X3 -> AUX X3
+# NP domain (X7 - both ADJ Phrase and N bar, X6 = ADJ Phrase, X5 = N bar)
+X2 -> DET NOUN
+X2 -> PRON
+X2 -> NOUN
+X2 -> DET X5
+X2 -> DET X7
+X7 -> X6 X5
+X5 -> NOUN X5
+X5 -> NOUN
+X5 -> X5 X4
+X6 -> ADJ
+X6 -> ADJ X6
+# Copular	
+X1 -> X2 X8
+X8 -> AUX X2
+X8 -> AUX X6
+X8 -> AUX X4
+START -> X2
+START -> X3
+START -> X4

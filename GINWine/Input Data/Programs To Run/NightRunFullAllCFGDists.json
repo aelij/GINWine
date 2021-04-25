@@ -1,0 +1,301 @@
+﻿{
+  "ProgramsToRun": [
+    {
+      "InputParams": {
+        "IsCFG": true,
+        "VocabularyFileName": "Vocabulary.json",
+        "GrammarFileName": "YesNPYesV3WithADJ.txt",
+        "DataFileName": null,
+        "DistributionType": "Normal",
+        "MaxSentenceLength": 8 //MaxSentenceLength is at least 6
+      },
+      "SearchSpaceParams": {
+        "NumberOfRuns": 1,
+        "MinNumberOfNonTerminals": 5,
+        "MaxNumberOfNonTerminals": 6,
+        "MinNoise": 0.0,
+        "MaxNoise": 0.0,
+        "NoiseStepSize": 0.1
+      },
+      "SimulatedAnnealingParams": {
+        "CoolingFactor": 0.999,
+        "NumberOfRestarts": 6,
+        "NumberOfNonImprovingIterationsBeforeRestart": 30,
+        "InitialTemperature": 10
+      }
+    },
+    {
+      "InputParams": {
+        "IsCFG": true,
+        "VocabularyFileName": "Vocabulary.json",
+        "GrammarFileName": "YesNPYesV3WithADJAmbiguous.txt",
+        "DataFileName": null,
+        "DistributionType": "Normal",
+        "MaxSentenceLength": 8 //MaxSentenceLength is at least 6
+      },
+      "SearchSpaceParams": {
+        "NumberOfRuns": 1,
+        "MinNumberOfNonTerminals": 5,
+        "MaxNumberOfNonTerminals": 6,
+        "MinNoise": 0.0,
+        "MaxNoise": 0.0,
+        "NoiseStepSize": 0.1
+      },
+      "SimulatedAnnealingParams": {
+        "CoolingFactor": 0.999,
+        "NumberOfRestarts": 4,
+        "NumberOfNonImprovingIterationsBeforeRestart": 20,
+        "InitialTemperature": 10
+      }
+    },
+    {
+      "InputParams": {
+        "IsCFG": true,
+        "VocabularyFileName": "VocabularySingleVerbalCategory.json",
+        "GrammarFileName": "YesNPYesV3WithADJ - Copy.txt",
+        "DataFileName": null,
+        "DistributionType": "Normal",
+        "MaxSentenceLength": 8 //MaxSentenceLength is at least 6
+      },
+      "SearchSpaceParams": {
+        "NumberOfRuns": 1,
+        "MinNumberOfNonTerminals": 5,
+        "MaxNumberOfNonTerminals": 6,
+        "MinNoise": 0.0,
+        "MaxNoise": 0.0,
+        "NoiseStepSize": 0.1
+      },
+      "SimulatedAnnealingParams": {
+        "CoolingFactor": 0.999,
+        "NumberOfRestarts": 6,
+        "NumberOfNonImprovingIterationsBeforeRestart": 30,
+        "InitialTemperature": 10
+      }
+    },
+    {
+      "InputParams": {
+        "IsCFG": true,
+        "VocabularyFileName": "VocabularySingleVerbalCategory.json",
+        "GrammarFileName": "YesNPYesV3WithADJAmbiguous - Copy.txt",
+        "DataFileName": null,
+        "DistributionType": "Normal",
+        "MaxSentenceLength": 8 //MaxSentenceLength is at least 6
+      },
+      "SearchSpaceParams": {
+        "NumberOfRuns": 1,
+        "MinNumberOfNonTerminals": 5,
+        "MaxNumberOfNonTerminals": 6,
+        "MinNoise": 0.0,
+        "MaxNoise": 0.0,
+        "NoiseStepSize": 0.1
+      },
+      "SimulatedAnnealingParams": {
+        "CoolingFactor": 0.999,
+        "NumberOfRestarts": 6,
+        "NumberOfNonImprovingIterationsBeforeRestart": 30,
+        "InitialTemperature": 10
+      }
+    }
+    /*,
+    {
+      "IsCFG": true,
+      "VocabularyFileName": "Vocabulary.json",
+      "NumberOfRuns": 1,
+      "GrammarFileName": "NoNPWithV3.txt",
+      "DataFileName": null,
+      "DistributionType": "Normal",
+      "CoolingFactor": 0.999
+    },
+    {
+      "IsCFG": true,
+      "VocabularyFileName": "Vocabulary.json",
+      "NumberOfRuns": 1,
+      "GrammarFileName": "YesNPNoV3.txt",
+      "DataFileName": null,
+      "DistributionType": "Normal",
+      "CoolingFactor": 0.999
+    },
+    {
+      "IsCFG": true,
+      "VocabularyFileName": "Vocabulary.json",
+      "NumberOfRuns": 1,
+      "GrammarFileName": "YesNPNoV3WithADJ.txt",
+      "DataFileName": null,
+      "DistributionType": "Normal",
+      "CoolingFactor": 0.999
+    },
+    {
+      "IsCFG": true,
+      "VocabularyFileName": "Vocabulary.json",
+      "NumberOfRuns": 1,
+      "GrammarFileName": "YesNPYesV3.txt",
+      "DataFileName": null,
+      "DistributionType": "Normal",
+      "CoolingFactor": 0.999
+    },
+    {
+      "IsCFG": true,
+      "VocabularyFileName": "Vocabulary.json",
+      "NumberOfRuns": 1,
+      "GrammarFileName": "YesNPYesV3WithADJ.txt",
+      "DataFileName": null,
+      "DistributionType": "Normal",
+      "CoolingFactor": 0.999
+    },
+
+    {
+      "IsCFG": true,
+      "VocabularyFileName": "Vocabulary.json",
+      "NumberOfRuns": 1,
+      "GrammarFileName": "NoNPNoV3.txt",
+      "DataFileName": null,
+      "DistributionType": "Uniform",
+      "CoolingFactor": 0.999
+    },
+    {
+      "IsCFG": true,
+      "VocabularyFileName": "Vocabulary.json",
+      "NumberOfRuns": 1,
+      "GrammarFileName": "NoNPWithV3.txt",
+      "DataFileName": null,
+      "DistributionType": "Uniform",
+      "CoolingFactor": 0.999
+    },
+    {
+      "IsCFG": true,
+      "VocabularyFileName": "Vocabulary.json",
+      "NumberOfRuns": 1,
+      "GrammarFileName": "YesNPNoV3.txt",
+      "DataFileName": null,
+      "DistributionType": "Uniform",
+      "CoolingFactor": 0.999
+    },
+    {
+      "IsCFG": true,
+      "VocabularyFileName": "Vocabulary.json",
+      "NumberOfRuns": 1,
+      "GrammarFileName": "YesNPNoV3WithADJ.txt",
+      "DataFileName": null,
+      "DistributionType": "Uniform",
+      "CoolingFactor": 0.999
+    },
+    {
+      "IsCFG": true,
+      "VocabularyFileName": "Vocabulary.json",
+      "NumberOfRuns": 1,
+      "GrammarFileName": "YesNPYesV3.txt",
+      "DataFileName": null,
+      "DistributionType": "Uniform",
+      "CoolingFactor": 0.999
+    },
+    {
+      "IsCFG": true,
+      "VocabularyFileName": "Vocabulary.json",
+      "NumberOfRuns": 1,
+      "GrammarFileName": "YesNPYesV3WithADJ.txt",
+      "DataFileName": null,
+      "DistributionType": "Uniform",
+      "CoolingFactor": 0.999
+    },
+
+    {
+      "IsCFG": true,
+      "VocabularyFileName": "Vocabulary.json",
+      "NumberOfRuns": 1,
+      "GrammarFileName": "NoNPNoV3.txt",
+      "DataFileName": null,
+      "DistributionType": "PowerLaw",
+      "CoolingFactor": 0.999
+    },
+    {
+      "IsCFG": true,
+      "VocabularyFileName": "Vocabulary.json",
+      "NumberOfRuns": 1,
+      "GrammarFileName": "NoNPWithV3.txt",
+      "DataFileName": null,
+      "DistributionType": "PowerLaw",
+      "CoolingFactor": 0.999
+    },
+    {
+      "IsCFG": true,
+      "VocabularyFileName": "Vocabulary.json",
+      "NumberOfRuns": 1,
+      "GrammarFileName": "YesNPNoV3.txt",
+      "DataFileName": null,
+      "DistributionType": "PowerLaw",
+      "CoolingFactor": 0.999
+    },
+    {
+      "IsCFG": true,
+      "VocabularyFileName": "Vocabulary.json",
+      "NumberOfRuns": 1,
+      "GrammarFileName": "YesNPNoV3WithADJ.txt",
+      "DataFileName": null,
+      "DistributionType": "PowerLaw",
+      "CoolingFactor": 0.999
+    },
+    {
+      "IsCFG": true,
+      "VocabularyFileName": "Vocabulary.json",
+      "NumberOfRuns": 1,
+      "GrammarFileName": "YesNPYesV3.txt",
+      "DataFileName": null,
+      "DistributionType": "PowerLaw",
+      "CoolingFactor": 0.999
+    },
+    {
+      "IsCFG": true,
+      "VocabularyFileName": "Vocabulary.json",
+      "NumberOfRuns": 1,
+      "GrammarFileName": "YesNPYesV3WithADJ.txt",
+      "DataFileName": null,
+      "DistributionType": "PowerLaw",
+      "CoolingFactor": 0.999
+    },
+    {
+      "IsCFG": true,
+      "VocabularyFileName": "Vocabulary.json",
+      "NumberOfRuns": 1,
+      "GrammarFileName": "YesNPYesV3WithADJAmbiguous.txt",
+      "DataFileName": null,
+      "DistributionType": "Normal",
+      "CoolingFactor": 0.999
+    },
+    {
+      "IsCFG": true,
+      "VocabularyFileName": "Vocabulary.json",
+      "NumberOfRuns": 1,
+      "GrammarFileName": "YesNPYesV3WithADJAmbiguous.txt",
+      "DataFileName": null,
+      "DistributionType": "Uniform",
+      "CoolingFactor": 0.999
+    },
+    {
+      "IsCFG": true,
+      "VocabularyFileName": "Vocabulary.json",
+      "NumberOfRuns": 1,
+      "GrammarFileName": "YesNPYesV3WithADJAmbiguous.txt",
+      "DataFileName": null,
+      "DistributionType": "PowerLaw",
+      "CoolingFactor": 0.999
+    }
+    {
+      "IsCFG": true,
+      "VocabularyFileName": "Vocabulary.json",
+      "NumberOfRuns": 1,
+      "GrammarFileName": "PalindromeCFGNoTD.txt",
+      "DataFileName": null,
+      "DistributionType": "PowerLaw",
+      "CoolingFactor": 0.999
+    },
+    {
+      "IsCFG": true,
+      "VocabularyFileName": "Vocabulary.json",
+      "NumberOfRuns": 1,
+      "GrammarFileName": "PalindromeCFGWithTD.txt",
+      "DataFileName": null,
+      "DistributionType": "PowerLaw",
+      "CoolingFactor": 0.999
+    },*/
+  ]
+}
